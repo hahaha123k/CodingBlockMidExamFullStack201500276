@@ -39,7 +39,7 @@ nav{
     align-items: center;    
 }
 a{
-    font-size: 17px;
+    font-size: 16px;
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -92,58 +92,84 @@ img{
     /* display: flex; */
     /* justify-content: space-between; */
     /* margin-left:55px; */
-    width: 359px;
+    width: 345px;
     height: 220px;
     border-radius: 5%;
     margin-bottom: 10px;
 
     margin-left:66px;
 }
+
 footer{
+    /* height: 50vh; */
+    background-color: rgb(36, 13, 13);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 70px 20px;
+}
+.photo,.contact,.news{
+    width: 400px;
+    padding: 10px 20px;
+    font-size: 22px;
+}
+.photo h3,.contact h3,.news h3{
+    padding: 20px;
+}
+.photo p,.contact p,.news p{
+    padding: 10px;
+    opacity: .7;
+}
+.news input{
+    width: 300px;
+    height: 40px;
+    background-color:transparent;
+    border: 2px solid #29d9d5;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0px;
+}
+@media screen and (max-width:900px) {
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    main{
+        padding: 200px 50px;
+    }
+}
+.banner{
+    /* height: 50vh; */
     width: 100%;
-    height: 500px;
-    background-color: red;
-}
-.foot1{
-    display: flex;
-    justify-content:center;
-}
-.line1{
-    margin-top: 20px;
-    font-size: 23px;
-}
-.line2{
-    margin-top: 10px;
-    display: block;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.btn2{
-    margin-top: 15px;
-}
-.part1{
-    height: 240px;
-    /* background-color: blue; */
-    background-image: url('https://images.unsplash.com/photo-1525869811964-53594bfcb4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGJhY2tncm91bmQlMjBpbWFnZSUyMHdpdGglMjBwZXJzb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');
-    background-repeat: no-repeat;
+    background-image: url("./images/ban3.webp");
     background-size: cover;
-}
-.part2{
     display: flex;
-    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px 100px;
 }
-.f1{
-    width: 30%;
-    margin-left: 20px;
-    height: 260px;
-    /* background-color: black; */
-    color: white;
+.banner h3{
+    color:#29d9d5;
+    font-size: 30px;
+    padding: 20px;
+    text-shadow: 0px 0px 3px cadetblue;
 }
-.line3{
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    margin-top: 10px;
+.banner h1{
+    font-size: 70px;
+    text-shadow: 2px 2px 3px black;
+}
+.banner p{
+    text-align: center;
+    padding: 10px;
+    opacity: .7;
+}
+@media screen and (max-width:500px ){
+    .cards{
+        grid-template-columns : 1fr;
+    }
+    main{
+        padding: 250px 10px;
+    }
 }
 
     </style>
@@ -188,59 +214,51 @@ footer{
             </div>
             <div class="img1">
                 <div>
-                    <img src="url()" alt="">
-                    <img src="./images/img2.avif" alt="">
-                    <img src="./images/img3.avif" alt="">
+                    <img src="https://images.unsplash.com/photo-1634020763161-7ff5a5560f08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1664809804524-9af129873160?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8Ym84alFLVGFFMFl8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1631507463816-a9972ba0528c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
                 </div>
             </div>
             <div>    
                 <div>
-                    <img src="./images/img4.avif" alt="">
-                    <img src="./images/img5.avif" alt="">
-                    <img src="./images/img6.avif" alt="">
+                    <img src="https://images.unsplash.com/photo-1644599585503-ca19d65c2695?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1664332817741-7c9ab631a9be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="https://images.unsplash.com/photo-1664009369177-072a596d69c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-       <div class="part1">
-        <div class="foot1">
-            <span class="line1">Start your journey !</span>
+    <section class="banner">
+        <h3>Start Your Journey!</h3>
+        <h1>Let's Capture This World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus ipsa, expedita quibusdam laudantium eius pariatur necessitatibus quae? Voluptates pariatur, animi commodi laboriosam totam officia consequuntur rem nobis ex eaque.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis magnam qui eum minima nostrum nisi a at dolorum quod nihil illo facilis nemo ea, voluptas tempora ullam repudiandae necessitatibus earum?</p>
+        <div class="book">Book Trial</div>
+    </section>
+    <footer id="contact">
+        <div class="photo" style="color: white;">
+            <a href="#cards"><h3>Photography</h3></a>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
         </div>
-        <div class="foot1">
-            <span class="line2">Let's capture this world</span>
+        <div class="contact" style="color: white;">
+            <h3>Contact Info</h3>
+            <p>anonymous</p>
+            <p>201500276</p>
+            <p>Mathura,281001</p>
         </div>
-        <div class="foot1">
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, non?</span>
+        <div class="news" style="color: white;">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our Newsletter</p>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <div class="book">Subscribe</div>
         </div>
-        <div class="foot1">
-            <span>Lorem ipsum dolor sit amet.</span>
-        </div>
-        <div class="foot1">
-            <button class="nav-btn btn2">Book Trial</button>
-        </div>
-       </div>
-       <div class="part2">
-            <div class="f1">
-                <div class="foot1">
-                    <span class="line3">Photography</span>
-                </div>
-                <div class="foot1">
-                    <span style="display: block; font-size: 10px; margin-top: 10px;">Lorem ipsum, dolor sit amet consectetur</span>
-                </div>
-            </div>
-            <div class="f1">
-                <div class="foot1">
-                    <span class="line3">Conatact info</span>
-                </div>
-            </div>
-            <div class="f1">
-                <div class="foot1">
-                    <span class="line3">News Letter</span>
-                </div>
-            </div>
-       </div>
     </footer>
+
 </body>
 </html>
 
